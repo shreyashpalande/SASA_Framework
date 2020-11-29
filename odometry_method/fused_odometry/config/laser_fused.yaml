@@ -1,0 +1,71 @@
+odom_frame: odom
+base_link_frame: base_link
+
+two_d_mode: true
+use_control: true
+control_config: [true,  false, false,
+                 false, false, true]
+stamped_control: true
+frequency: 50
+
+odom0: boxer_velocity_controller/odom
+odom0_config: [true, true, false,
+               false, false, true,
+               true, true, false,
+               false, false, true,
+               false, false, false]
+odom0_differential: false
+odom0_queue_size: 10
+
+odom1: odom_rf2o
+odom1_config: [true, true, false,
+               false, false, true,
+               true, true, false,
+               false, false, true,
+               false, false, false]
+odom1_differential: false
+odom1_queue_size: 10
+
+imu0: imu
+imu0_config: [false, false, false,
+              false, false, false,
+              false, false, false,
+              false, false, true,
+              false, false, false]
+imu0_differential: true
+imu0_queue_size: 4
+
+P_x: &P_x 1.05
+P_y: &P_y 1.05
+P_z: &P_z 1.05
+P_R: &P_R !degrees 60.0
+P_P: &P_P !degrees 60.0
+P_Y: &P_Y !degrees 75.0
+
+P_vx: &P_vx 0.1
+P_vy: &P_vy 0.1
+P_vz: &P_vz 0.1
+P_vR: &P_vR !degrees 10.0
+P_vP: &P_vP !degrees 10.0
+P_vY: &P_vY !degrees 10.0
+
+# TODO tune these values
+P_ax: &P_ax 0.0
+P_ay: &P_ay 0.0
+P_az: &P_az 0.0
+
+process_noise_covariance: [*P_x, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, *P_y, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, *P_z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, *P_R, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, *P_P, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, *P_Y, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, *P_vx, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, *P_vy, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, *P_vz, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, *P_vR, 0.0, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, *P_vP, 0.0, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, *P_vY, 0.0, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, *P_ax, 0.0, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, *P_ay, 0.0,
+                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, *P_az]

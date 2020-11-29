@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find stereo_odometry)/launch/stereo_odometry.launch" />
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
+        <rosparam command="load" file="$(find fused_odometry)/config/stereo_fused.yaml" />
+    </node>
+</launch>
