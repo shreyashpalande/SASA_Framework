@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Configurable launch args -->
+  <arg name="lidar_rays" default="720" />
+  <arg name="robot_namespace" default="/" />
+  <!-- <arg name="x" default="22.0" />
+  <arg name="y" default="-5.0" />
+  <arg name="yaw" default="0.0" /> -->
+  <arg name="x" default="-2.0" />
+  <arg name="y" default="5.0" />
+  <arg name="yaw" default="0.0" />
+
+  <!-- Spawn a single BOXER robot -->
+  <include file="$(find boxer_gazebo)/launch/spawn_boxer.launch">
+    <arg name="lidar_rays" value="$(arg lidar_rays)" />
+    <arg name="robot_namespace" value="$(arg robot_namespace)" />
+    <arg name="x" default="$(arg x)" />
+    <arg name="y" default="$(arg y)" />
+    <arg name="yaw" default="$(arg yaw)" />
+  </include>
+
+  <node ns="wide_stereo" name="wide_stereo_proc" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" output="screen">
+    <param name="disparity_range" type="int" value="128" />
+    <param name="approximate_sync" type="bool" value="true" />
+  </node>
+
+  <!-- Buffer Server -->
+  <node pkg="tf2_ros" type="buffer_server" name="tf2_buffer_server" output="screen">
+    <param name="buffer_size" value="200.0" />
+  </node>
+
+  <!-- Spawns the synchronizer -->
+  <node type="camera_synchronizer" name="camera_synchronizer_node" pkg="gazebo_plugins" output="screen" />
+
+</launch>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>boxer_description</name>
+  <version>0.0.8</version>
+  <description>
+  Contains the URDF description of BOXER for visualization and simulation purposes.
+  </description>
+  <maintainer email="dniewinski@clearpathrobotics.com">Dave Niewinski</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>xacro</build_depend>
+  <build_export_depend>roslaunch</build_export_depend>
+  <build_export_depend>urdf</build_export_depend>
+  <build_export_depend>xacro</build_export_depend>
+  <exec_depend>roslaunch</exec_depend>
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

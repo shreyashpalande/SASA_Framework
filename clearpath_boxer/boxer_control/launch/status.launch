@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find visual_indication)/launch/visual_indication.launch">
+    <arg name="theme_path" value="$(find boxer_visual)"/>
+  </include>
+
+  <node pkg="robot_state_aggregator" type="state_aggregator_node" name="state_aggregator_node" respawn="true"
+        respawn_delay="5.0" />
+</launch>

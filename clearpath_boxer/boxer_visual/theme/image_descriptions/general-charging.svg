@@ -1,0 +1,13 @@
+<svg height="26" width="338" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Left -->
+<polygon points="67,0 28,26 108,26" fill="rgba(0,255,0,1.0)" />
+<!-- Back -->
+<polygon points="152,0 136,26 168,26" fill="rgba(0,255,0,1.0)" />
+<!-- Right -->
+<polygon points="237,0 197,26 280,26" fill="rgba(0,255,0,1.0)" />
+
+<!-- Front -->
+<polygon points="323,0 338,26 308,26" fill="rgba(0,255,0,1.0)" />
+
+</svg>

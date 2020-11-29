@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  height="694mm" id="svg2"
+  version="1.1"
+  viewBox="0 0 210 297"
+  width="520mm">
+
+  <data>
+    <path d="m 0.4443307,-1.6646853 1.2401574,0 c 0.1962993,0 0.3543308,0.1580316 0.3543308,0.354331 l 0,1.91338531 c 0,0.1962994 -0.1580315,0.354331 -0.3543308,0.354331 l -1.2401574,0 C 0.2480315,0.95736201 0.090,0.79933041 0.090,0.60303101 l 0,-1.91338531 c 0,-0.1962994 0.1580315,-0.354331 0.3543307,-0.354331 z" id="boxer" style="fill:none;stroke:#444;stroke-width:1.5;stroke-opacity:1" />
+
+    <!-- <script><![CDATA[
+      var path = document.getElementById("boxer");
+      var len = path.getTotalLength();
+      console.log("Total length is " + len);
+
+      for (a = 0; a < 117; a++)
+      {
+        var pt = path.getPointAtLength(len * (a / 117));
+        console.log(a, pt.x, pt.y);
+        var el = document.createElement("circle");
+        el.setAttribute("cx", pt.x);
+        el.setAttribute("cy", pt.y);
+        el.setAttribute("r", 0.6);
+        el.setAttribute("fill", "red");
+        el.setAttribute("stroke", "none");
+        document.documentElement.appendChild(el);
+      }
+    ]]></script>-->
+
+  </data>
+
+  <points>
+    <circle cx="-0.282352940125" cy="-0.0815173177159" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.102971623926" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.124425930135" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.145880516838" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.167334787986" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.188789094196" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.210243295221" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.231697987108" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.253152468625" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.27460688002" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.281452942859" cy="-0.296021917288" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.276550281136" cy="-0.316865346012" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.267472263645" cy="-0.336258944344" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.254612675484" cy="-0.353383569156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.238509823294" cy="-0.367502366794" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.219854454784" cy="-0.378015819718" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.199441468014" cy="-0.384482397753" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.178138031679" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.156683637815" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.135229243952" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.113774867619" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.092320473755" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.0708660798915" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.0494117035585" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.0279572921641" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.00650291583118" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.0149514955633" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.0364058718962" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.0578602482291" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.0793146245621" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.100769035956" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.122223447351" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.143677823684" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.165132200017" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.186586611411" cy="-0.386672132156" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.207896148457" cy="-0.384509815888" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.228310563985" cy="-0.378037277391" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.246956930441" cy="-0.367507731215" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.263053760809" cy="-0.353386619512" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.275930678143" cy="-0.336278403506" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.285037391326" cy="-0.316896936474" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.289939838297" cy="-0.296050387271" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.274634192972" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.253179816639" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.231725405244" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.210270958788" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.188816599986" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.167362241184" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.145907864851" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.124453488518" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.102999112185" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.08154468326" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.0600903419888" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.0386359656559" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="-0.0171816243845" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.00427275194841" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.0257271808736" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.0471815572065" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.0686359335394" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.0900903098724" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.111544686205" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.132999132661" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.154453508994" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.175907920389" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.19736226166" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.218816708116" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.240271154572" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290829069474" cy="0.261725601028" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.290757403654" cy="0.283179153414" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.288015660118" cy="0.304415727362" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.280989674961" cy="0.324642475915" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.269959905568" cy="0.342997498371" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.255406204392" cy="0.358709124959" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.237929561559" cy="0.371086643024" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.218291478999" cy="0.379621922971" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.197321688428" cy="0.383958388776" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.175886876443" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.154432429987" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.132978088716" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.111523642259" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.0900691958035" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.0686148895938" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.0471604431376" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.0257061369279" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="0.00425169047188" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.0172027033918" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.0386570096015" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.0601114560576" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.0815657797982" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.103020121069" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.124474707772" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.145928943859" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.167383250068" cy="0.3845182517" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.188820639077" cy="0.383981021012" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.209795417154" cy="0.379648604815" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.229430107509" cy="0.371100544929" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.246892440845" cy="0.35870712645" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.261456169626" cy="0.343009699794" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.272508058478" cy="0.324669175288" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.279558433329" cy="0.304448054118" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282291602124" cy="0.28320678192" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.261753036695" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.240298739251" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.218844380449" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.197389793746" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.175935487537" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.154481190092" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.133026568329" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.111572332242" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.0901179909706" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.0686633341453" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.0472090279356" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.0257547217257" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="0.00430045057744" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.017154118594" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.0386084248038" fill="red" r="0.6" stroke="none" />
+    <circle cx="-0.282352940125" cy="-0.0600627310135" fill="red" r="0.6" stroke="none" />
+  </points>
+</svg>

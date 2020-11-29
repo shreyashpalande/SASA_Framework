@@ -1,0 +1,4 @@
+logical_leds: 338
+physical_leds: 338
+blank_indices: []
+bidirectional: False

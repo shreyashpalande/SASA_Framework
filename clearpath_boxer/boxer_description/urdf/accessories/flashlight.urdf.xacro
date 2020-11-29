@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- this macro is used for creating wide and narrow double stereo camera links -->
+  <xacro:macro name="flash_light" params="name parent duration interval colour *origin">
+
+    <joint name="${name}_frame_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="${name}_link" />
+    </joint>
+
+    <link name="${name}_link">
+      <visual>
+        <origin xyz="0.01 -0.06 0" rpy="1.57 0.0 1.57" />
+        <geometry>
+          <mesh filename="package://boxer_description/meshes/accessories/bumblebee2.dae" />
+        </geometry>
+      </visual>
+      <light>
+        <id>light_source1</id>
+        <duration>0.5</duration>
+        <interval>0.5</interval>
+      </light>
+    </link>
+
+  </xacro:macro>
+</robot>

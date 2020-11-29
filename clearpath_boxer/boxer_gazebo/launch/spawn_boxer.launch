@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="lidar_rays" default="720"/>
+  <arg name="robot_namespace" default="/"/>
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="4.0"/>
+  <arg name="yaw" default="0.0"/>
+  
+  <!-- Launch all nodes within the specified namespace. Prevents node namespace collisions in the multi-robot case -->
+  <group ns="$(arg robot_namespace)">
+    
+    <!-- Constants for gazebo_ros_control's internal PID loop that
+     drives the simulated position and velocity controllers. -->
+    <rosparam>
+      gazebo_ros_control:
+        pid_gains:
+          wheel_left_joint: { p: 1.0, i: 0.0, d: 0.0 }
+          wheel_right_joint: { p: 1.0, i: 0.0, d: 0.0 }
+    </rosparam>
+
+    <rosparam command="load" file="$(find boxer_control)/config/control.yaml" />
+
+    <!-- Load the BOXER description -->
+    <include file="$(find boxer_description)/launch/description.launch">
+      <arg name="lidar_rays" value="$(arg lidar_rays)"/>
+      <arg name="robot_namespace" value="$(arg robot_namespace)"/>
+      <arg name="boxer_description" value="$(find boxer_gazebo)/urdf/boxer.gazebo.xacro"/>
+    </include>
+
+    <include file="$(find boxer_control)/launch/control.launch"/>
+
+    <!-- Spawn the BOXER robot model in Gazebo-->
+    <node name="spawn_boxer" pkg="gazebo_ros" type="spawn_model"
+          args="-param robot_description
+                -urdf
+                -model $(arg robot_namespace)
+                -x $(arg x)
+                -y $(arg y)
+                -z 0.03
+                -Y $(arg yaw)" />
+
+  </group> <!-- End of namespace -->
+
+</launch>

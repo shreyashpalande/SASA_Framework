@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="lidar_rays" default="720"/>
+  <arg name="robot_namespace" default="/"/>
+
+  <!-- Load Boxer description -->
+  <arg name="boxer_description" default="$(find boxer_description)/urdf/boxer.urdf.xacro"/>
+  <param name="robot_description" command="$(find xacro)/xacro '$(arg boxer_description)'
+    --inorder
+    lidar_rays:=$(arg lidar_rays)
+    robot_namespace:=$(arg robot_namespace)"/>
+
+</launch>

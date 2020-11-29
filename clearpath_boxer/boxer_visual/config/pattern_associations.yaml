@@ -1,0 +1,80 @@
+safety_status:
+  e_stop:
+    patterns:
+      - general-estop
+  safety_stop:
+    patterns:
+      - front-park
+      - rear-park
+      - general-safety-stop
+  warning:
+    patterns:
+      - front-park
+      - rear-park
+      - general-warning
+  safe_to_load:
+    patterns:
+      - general-safe-to-load
+  normal_travel:
+    patterns:
+      - front-drive
+      - rear-drive
+  about_to_move:
+    patterns:
+      - front-planning
+      - rear-drive
+  narrow_hallway:
+    patterns:
+      - front-drive
+      - rear-park
+      - general-narrow-hall
+  narrow_hallway_static:
+    patterns:
+      - front-drive
+      - rear-drive
+      - general-narrow-hall-static
+  docking:
+    patterns:
+      - front-focus
+      - rear-drive
+      - general-dock
+  charging:
+    patterns:
+      - front-park
+      - rear-park
+      - general-charging
+  robot_lost:
+    patterns:
+      - general-lost
+  parked:
+    patterns:
+      - front-park
+      - rear-park
+  manual:
+    patterns:
+      - front-drive
+      - rear-drive
+  power_on:
+    patterns:
+      - general-power-on
+  appliance_active:
+    patterns:
+      - front-park
+      - rear-park
+      - general-appliance-active
+
+directional:
+  left_turn:
+    - leftsignal-leftturn
+  right_turn:
+    - rightsignal-rightturn
+  clockwise_turn:
+    - rightsignal-rightturn
+  counterclockwise_turn:
+    - leftsignal-leftturn
+  reverse:
+    - rear-reverse
+  braking:
+    - rear-park
+
+transitions: []

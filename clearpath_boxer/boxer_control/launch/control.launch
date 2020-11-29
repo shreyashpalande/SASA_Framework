@@ -1,0 +1,41 @@
+<launch>
+  <arg name="posepublisher" default="false"/>
+  <arg name="ekf_node" default="false"/>
+  <arg name="keyboard_input" default="true"/>
+  <arg name="velocity_controller" default="true"/>
+  <arg name="interactive_twist_marker" default="false"/>
+
+
+  
+  <rosparam command="load" file="$(find boxer_control)/config/control.yaml" />
+
+  <group if="$(optenv BOXER_CONTROL_EXTRAS 0)" >
+    <rosparam command="load" file="$(env BOXER_CONTROL_EXTRAS_PATH)" />
+  </group>
+
+  <node if="$(arg velocity_controller)" name="controller_spawner" pkg="controller_manager" type="spawner"
+        args="boxer_joint_publisher boxer_velocity_controller" />
+
+  <node if="$(arg velocity_controller)" pkg="twist_mux" type="twist_mux" name="twist_mux">
+    <rosparam command="load" file="$(find boxer_control)/config/twist_mux.yaml" />
+    <remap from="cmd_vel_out" to="boxer_velocity_controller/cmd_vel"/>
+  </node>
+
+  <node if="$(arg interactive_twist_marker)" pkg="interactive_marker_twist_server" type="marker_server" name="twist_marker_server"/>
+
+
+  <node if="$(arg ekf_node)" pkg="robot_localization" type="ekf_localization_node" name="ekf_localization"> 
+    <rosparam command="load" file="$(find boxer_control)/config/robot_localization.yaml" />
+  </node>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <param name="use_tf_static" value="true"/>
+  </node>
+
+  <node if="$(arg keyboard_input)" name="keyboard_input" pkg="boxer_control" type="vel_cmd.py">
+  </node>
+
+  <node if="$(arg posepublisher)" name="posepublisher" pkg="boxer_control" type="posepublisher.py">
+  </node>
+  
+</launch>

@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<robot name="boxer" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find boxer_description)/urdf/materials.urdf.xacro" />
+
+  <xacro:arg name="laser_enabled" default="true" />
+  <xacro:arg name="laser_xyz" default="$(optenv HUSKY_LMS1XX_XYZ 0.4 0 0.09)" />
+  <xacro:arg name="laser_rpy" default="$(optenv HUSKY_LMS1XX_RPY 0.0 0.0 0.0)" />
+
+  <xacro:arg name="kinect_enabled" default="true" />
+  <xacro:arg name="kinect_xyz" default="$(optenv BOXER_KINECT_XYZ 0.32 0 0.0)" />
+  <xacro:arg name="kinect_rpy" default="$(optenv BOXER_KINECT_RPY 0 0.0 0)" />
+
+  <xacro:arg name="bumblebee_enabled" default="true" />
+
+  <xacro:include filename="$(find boxer_description)/urdf/accessories/kinect_camera.urdf.xacro" />
+  <xacro:include filename="$(find boxer_description)/urdf/accessories/stereo_camera.urdf.xacro" />
+  <xacro:include filename="$(find boxer_description)/urdf/accessories/flashlight.urdf.xacro" />
+  <xacro:include filename="$(find boxer_description)/urdf/accessories/sick_lms1xx_mount.urdf.xacro" />
+  <xacro:include filename="$(find boxer_description)/urdf/accessories/bumblebee_stereo.urdf.xacro" />
+
+  <xacro:arg name="velocity_controller" default="true" />
+
+  <xacro:property name="M_PI" value="3.14159" />
+
+
+  <link name="chassis_link">
+    <inertial>
+      <origin xyz="0 0 0.07" rpy="1.5708 0 0" />
+      <mass value="51" />
+      <inertia ixx="2.3" ixy="0" ixz="0" iyy="3.35" iyz="0.00" izz="1.22" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://boxer_description/meshes/chassis_link.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.8 0.8 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://boxer_description/meshes/chassis_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="internal_link">
+    <inertial>
+      <origin xyz="0 0.19 -0.031" rpy="0 0 0" />
+      <mass value="31" />
+      <inertia ixx="1.19" ixy="0" ixz="0" iyy="1.82" iyz="0.0" izz="0.68" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://boxer_description/meshes/internal_link.dae" />
+      </geometry>
+      <material name="Boxer_DarkGrey" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <!-- Mesh is scaled down slightly in length, to mitigate collision with laser rays due to slow physics updates  -->
+        <!-- (The z axis is scaled since the whole model is rotated at the joint, and collision model resolution isn't
+           very smart.) -->
+        <mesh filename="package://boxer_description/meshes/internal_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="internal_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="1.5708 0 0" />
+    <parent link="chassis_link" />
+    <child link="internal_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <link name="lift_link">
+    <inertial>
+      <origin xyz="0 0.076 0" rpy="0 0 0" />
+      <mass value="10" />
+      <inertia ixx="0.47" ixy="0" ixz="0" iyy="0.74" iyz="0" izz="0.29" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://boxer_description/meshes/lift_link.dae" />
+      </geometry>
+      <material name="">
+        <color rgba="0.8 0.8 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://boxer_description/meshes/lift_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="lift_joint" type="fixed">
+    <origin xyz="0 0 0.177" rpy="1.5708 0 0" />
+    <parent link="chassis_link" />
+    <child link="lift_link" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="0.078" effort="10000.0" velocity="0.02" />
+    <dynamics damping="100.0" friction="100" />
+  </joint>
+
+  <link name="top_mount">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://boxer_description/meshes/top_plate.stl" />
+      </geometry>
+      <material name="Boxer_DarkGrey" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://boxer_description/meshes/top_plate_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="top_mount_joint" type="fixed">
+    <origin xyz="0 0.1125 0" rpy="0 -1.5707 -1.5707" />
+    <parent link="lift_link" />
+    <child link="top_mount" />
+  </joint>
+
+  <link name="rotacastor_right_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="100" />
+      <inertia ixx="0.2" ixy="0" ixz="0" iyy="0.2" iyz="0" izz="0.2" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.0625" length="0.06" />
+      </geometry>
+      <material name="Boxer_Red" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.0625" length="0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="rotacastor_right_joint" type="fixed">
+    <origin xyz="-0.177 -0.274 0.043" rpy="0 0 0" />
+    <parent link="chassis_link" />
+    <child link="rotacastor_right_link" />
+    <axis xyz="1 0 0" />
+    <dynamics damping="1.0" />
+  </joint>
+
+  <link name="rotacastor_left_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="100" />
+      <inertia ixx="0.2" ixy="0" ixz="0" iyy="0.2" iyz="0" izz="0.2" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.0625" length="0.06" />
+      </geometry>
+      <material name="Boxer_Red" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.0625" length="0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="rotacastor_left_joint" type="fixed">
+    <origin xyz="0.177 -0.274 0.043" rpy="0 0 0" />
+    <parent link="chassis_link" />
+    <child link="rotacastor_left_link" />
+    <axis xyz="1 0 0" />
+    <dynamics damping="1.0" />
+  </joint>
+
+  <link name="wheel_right_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="100" />
+      <inertia ixx="0.2" ixy="0" ixz="0" iyy="0.2" iyz="0" izz="0.2" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.080" length="0.05" />
+      </geometry>
+      <material name="Boxer_Red" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.080" length="0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wheel_right_joint" type="continuous">
+    <origin xyz="-0.247 0.157 0.058" rpy="0 0 0" />
+    <parent link="chassis_link" />
+    <child link="wheel_right_link" />
+    <axis xyz="1 0 0" />
+    <dynamics damping="1.0" />
+  </joint>
+
+  <link name="wheel_left_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="100" />
+      <inertia ixx="0.2" ixy="0" ixz="0" iyy="0.2" iyz="0" izz="0.2" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.080" length="0.05" />
+      </geometry>
+      <material name="Boxer_Red" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.080" length="0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wheel_left_joint" type="continuous">
+    <origin xyz="0.247 0.157 0.058" rpy="0 0 0" />
+    <parent link="chassis_link" />
+    <child link="wheel_left_link" />
+    <axis xyz="1 0 0" />
+    <dynamics damping="1.0" />
+  </joint>
+
+  <!-- Base link with no geometry or inertia, because KDL needs it
+     to be that way. -->
+  <link name="base_link" />
+  <joint name="base_chassis_joint" type="fixed">
+    <origin xyz="0.15 0 0" rpy="0 0 1.5708" />
+    <parent link="base_link" />
+    <child link="chassis_link" />
+  </joint>
+
+  <!-- Projection of base_link on the ground to get the 3D data
+in the right frame w.r.t the ground. -->
+  <link name="base_footprint" />
+  <joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0 0 -0.08" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="base_footprint" />
+  </joint>
+
+  <xacro:if value="$(arg laser_enabled)">
+
+    <sick_lms1xx_mount prefix="base" />
+
+    <sick_lms1xx frame="base_laser" topic="front/scan" robot_namespace="$(arg robot_namespace)" update_rate="50" min_angle="-1.57079633" max_angle="1.57079633" min_range="0.1" max_range="7.0" />
+
+    <joint name="laser_mount_joint" type="fixed">
+      <origin xyz="$(arg laser_xyz)" rpy="$(arg laser_rpy)" />
+      <parent link="base_link" />
+      <child link="base_laser_mount" />
+    </joint>
+
+  </xacro:if>
+
+  <xacro:stereo_camera parent="base_link" name="wide_stereo" focal_length="320.000105" hfov="90" image_format="BAYER_BGGR8" image_width="640" image_height="480">
+    <origin xyz="0.4884 0.06 0.05465" rpy="0.0   0.0   0.0" />
+  </xacro:stereo_camera>
+
+  <joint name="flash_light_frame_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="kinect_link" />
+    <child link="flash_light_link" />
+  </joint>
+
+  <link name="flash_light_link" />
+
+  <!-- <xacro:if value="$(arg bumblebee_enabled)">
+    <xacro:bumblebee_stereo prefix="bumblebee" parent="base" robot_namespace="$(arg robot_namespace)" />
+  </xacro:if> -->
+
+  <xacro:if value="$(arg kinect_enabled)">
+    <joint name="kinect_frame_joint" type="fixed">
+      <origin xyz="$(arg kinect_xyz)" rpy="$(arg kinect_rpy)" />
+      <parent link="top_mount" />
+      <child link="kinect_link" />
+    </joint>
+
+    <xacro:kinect_camera prefix="kinect" robot_namespace="$(arg robot_namespace)" />
+  </xacro:if>
+
+  <!-- Sonar links to base link joints -->
+  <link name="rear_left_sonar_link" />
+  <joint name="rear_left_sonar_joint" type="fixed">
+    <origin xyz="-0.2043 0.150 0.157" rpy="0 0 3.14159" />
+    <parent link="base_link" />
+    <child link="rear_left_sonar_link" />
+  </joint>
+
+  <link name="rear_right_sonar_link" />
+  <joint name="rear_right_sonar_joint" type="fixed">
+    <origin xyz="-0.2043 -0.150 0.157" rpy="0 0 3.141597" />
+    <parent link="base_link" />
+    <child link="rear_right_sonar_link" />
+  </joint>
+
+
+  <xacro:if value="$(arg velocity_controller)">
+    <transmission name="wheel_left_transmission">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="wheel_left_joint">
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="wheel_left_actuator">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <transmission name="wheel_right_transmission">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="wheel_right_joint">
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="wheel_right_actuator">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+  </xacro:if>
+
+  <link name="imu_link" />
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="imu_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+  </joint>
+
+  <xacro:include filename="$(optenv BOXER_URDF_EXTRAS empty.urdf)" />
+</robot>

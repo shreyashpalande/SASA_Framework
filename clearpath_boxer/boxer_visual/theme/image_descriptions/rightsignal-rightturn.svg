@@ -1,0 +1,15 @@
+<svg height="15" width="338" xmlns="http://www.w3.org/2000/svg">
+   <defs>
+    <linearGradient id="rightturn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0)" stop-opacity="1.0" />
+      <stop offset="80%" style="stop-color:rgb(255,255,0)" stop-opacity="0.0" />
+      <stop offset="100%" style="stop-color:rgb(255,255,0)" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Black box to block out indicators -->
+
+<rect x="8" y="0" width="121" height="100%" fill="rgba(0, 0, 0, 1.0)" />
+
+<rect x="8" y="0" width="121" height="100%" fill="url(#rightturn)" />
+</svg>

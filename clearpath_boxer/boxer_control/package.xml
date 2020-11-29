@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>boxer_control</name>
+  <version>0.0.8</version>
+  <description>Controllers and control configuration for BOXER.</description>
+  <maintainer email="dniewinski@clearpathrobotics.com">Dave Niewinski</maintainer>
+  <author email="mpurvis@clearpathrobotics.com">Mike Purvis</author>
+  <author email="modriscoll@clearpath.ai">Mike O'Driscoll</author>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>boxer_msgs</build_depend>
+  <build_depend>diagnostic_updater</build_depend>
+  <build_depend>diff_drive_controller</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>stereo_image_proc</build_depend>
+
+
+  <build_export_depend>boxer_msgs</build_export_depend>
+  <build_export_depend>diagnostic_updater</build_export_depend>
+  <build_export_depend>diff_drive_controller</build_export_depend>
+  <build_export_depend>nav_msgs</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+
+  <exec_depend>boxer_msgs</exec_depend>
+  <exec_depend>diagnostic_updater</exec_depend>
+  <exec_depend>diff_drive_controller</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

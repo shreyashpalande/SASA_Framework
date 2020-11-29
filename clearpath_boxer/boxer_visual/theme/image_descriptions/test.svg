@@ -1,0 +1,7 @@
+<svg height="1" width="338" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="9" height="100%" fill="rgba(255, 255, 0, 1.0)" />
+  <rect x="9" y="0" width="33" height="100%" fill="rgba(255, 0, 0, 1.0)" />
+  <rect x="42" y="0" width="26" height="100%" fill="rgba(0, 255, 0, 1.0)" />
+  <rect x="68" y="0" width="33" height="100%" fill="rgba(0, 0, 255, 1.0)" />
+  <rect x="101" y="0" width="15" height="100%" fill="rgba(255, 255, 0, 1.0)" />
+</svg>
