@@ -2,7 +2,7 @@
   <world name='default'>
     <gui fullscreen='0'>
       <camera name='gzclient_camera'>
-        <pose frame=''>11.3575 -0.469493 14.8861 0 0.669797 3.04754</pose>
+        <pose frame=''>-12.0718 -0.555998 17.8481 -0 0.945797 -0.06309</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -5479,19 +5479,554 @@
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
     </light>
-    <plugin name='BoxerLight' filename='libRobotLightPlugin.so'/>
-    <plugin name='StoreLight' filename='libBookStoreLightPlugin.so'/>
-    <wind/>
+    <light name='RetailShop_CeilingLight_0010' type='point'>
+      <pose frame=''>6.70498 -3.82721 3 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 0 -1</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+    <light name='RetailShop_CeilingLight_0011' type='point'>
+      <pose frame=''>6.45432 -1.02657 3 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 0 -1</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+    <light name='RetailShop_CeilingLight_0012' type='point'>
+      <pose frame=''>0.045261 4.14753 3 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 0 -1</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+    <light name='RetailShop_CeilingLight_0013' type='point'>
+      <pose frame=''>-4.98297 4.24184 3 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 0 -1</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+    <light name='RetailShop_CeilingLight_0014' type='point'>
+      <pose frame=''>-4.04572 5.57248 3 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 0 -1</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+    <light name='RetailShop_CeilingLight_0015' type='point'>
+      <pose frame=''>-5.47305 6.99345 3 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 0 -1</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
     <state world_name='default'>
-      <sim_time>878 429000000</sim_time>
-      <real_time>727 161225123</real_time>
-      <wall_time>1606671982 778420376</wall_time>
-      <iterations>720508</iterations>
+      <sim_time>5033 722000000</sim_time>
+      <real_time>564 330667076</real_time>
+      <wall_time>1607196674 639457214</wall_time>
+      <iterations>513007</iterations>
       <model name='AirConditionerC_01_001'>
         <pose frame=''>7.4582 1.42245 3.29094 0 0 -1.56422</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_AirConditionerC_01::link'>
           <pose frame=''>7.4582 1.42245 3.29094 0 0 -1.56422</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00000'>
+        <pose frame=''>7.39075 0.440228 0.073883 0 -1.51519 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>7.39075 0.440228 0.073883 0 -1.51519 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00000_1'>
+        <pose frame=''>7.39746 1.5994 0.073883 0 -1.51519 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>7.39746 1.5994 0.073883 0 -1.51519 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00000_4'>
+        <pose frame=''>7.38647 -0.81515 0.073883 0 -1.51519 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>7.38647 -0.81515 0.073883 0 -1.51519 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00001'>
+        <pose frame=''>5.17411 -3.23194 0.640755 -1.56066 0 0</pose>
+        <scale>0.12001 0.165525 1</scale>
+        <link name='main'>
+          <pose frame=''>5.17411 -3.23194 0.640755 -1.56066 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00001_4'>
+        <pose frame=''>5.17855 -4.70031 0.640755 -1.56066 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>5.17855 -4.70031 0.640755 -1.56066 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00002'>
+        <pose frame=''>5.12047 -2.06483 0.545634 -1.56829 0 0</pose>
+        <scale>0.116293 0.228458 1</scale>
+        <link name='main'>
+          <pose frame=''>5.12047 -2.06483 0.545634 -1.56829 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00003'>
+        <pose frame=''>5.12777 -0.58732 0.545634 -1.56829 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>5.12777 -0.58732 0.545634 -1.56829 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00003_1'>
+        <pose frame=''>2.00662 -2.37442 0.275036 -1.5768 1.5649 -8e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>2.00662 -2.37442 0.275036 -1.5768 1.5649 -8e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00003_1_4'>
+        <pose frame=''>1.84379 -1.50287 0.275036 -1.5768 1.5649 -8e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>1.84379 -1.50287 0.275036 -1.5768 1.5649 -8e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00003_4'>
+        <pose frame=''>1.55197 -1.94377 0.274908 0 1.5649 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>1.55197 -1.94377 0.274908 0 1.5649 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00004'>
+        <pose frame=''>1.99686 -4.3278 0.309387 -1.53785 0 0</pose>
+        <scale>0.211326 0.210887 1</scale>
+        <link name='main'>
+          <pose frame=''>1.99686 -4.3278 0.309387 -1.53785 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00004_1'>
+        <pose frame=''>2.42317 -4.77969 0.312466 0 1.55193 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>2.42317 -4.77969 0.312466 0 1.55193 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00004_1_4'>
+        <pose frame=''>1.56326 -4.86449 0.312466 0 1.55193 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>1.56326 -4.86449 0.312466 0 1.55193 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00004_4'>
+        <pose frame=''>2.06788 -5.1982 0.309387 -1.53785 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>2.06788 -5.1982 0.309387 -1.53785 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00005'>
+        <pose frame=''>-0.693308 -2.32003 0.372262 -1.56449 0 0</pose>
+        <scale>0.18528 0.194701 1</scale>
+        <link name='main'>
+          <pose frame=''>-0.693308 -2.32003 0.372262 -1.56449 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00005_4'>
+        <pose frame=''>-0.76203 -5.80592 0.24488 -1.56449 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-0.76203 -5.80592 0.24488 -1.56449 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00006'>
+        <pose frame=''>-6.07247 -1.02144 0.392483 3.14159 1.55703 3.14159</pose>
+        <scale>0.231247 0.26526 1</scale>
+        <link name='main'>
+          <pose frame=''>-6.07247 -1.02144 0.392483 3.14159 1.55703 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00007'>
+        <pose frame=''>-5.98508 0.725998 0.394482 0 -1.56781 0</pose>
+        <scale>0.234856 0.345167 1</scale>
+        <link name='main'>
+          <pose frame=''>-5.98508 0.725998 0.394482 0 -1.56781 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00008'>
+        <pose frame=''>7.38579 -3.72224 0.052986 -1.71746 -1.56475 1.71746</pose>
+        <scale>0.010685 0.020037 0.057514</scale>
+        <link name='main'>
+          <pose frame=''>7.38579 -3.72224 0.052986 -1.71746 -1.56475 1.71746</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00008_1'>
+        <pose frame=''>7.3994 -1.29434 0.052986 -1.71746 -1.56475 1.71746</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>7.3994 -1.29434 0.052986 -1.71746 -1.56475 1.71746</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00008_2'>
+        <pose frame=''>-5.60271 3.42077 0.497007 -1.71745 -1.56475 1.71745</pose>
+        <scale>12.858 6.72473 1</scale>
+        <link name='main'>
+          <pose frame=''>-5.60271 3.42077 0.497007 -1.71745 -1.56475 1.71745</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00008_4'>
+        <pose frame=''>7.398 -2.41212 0.052986 -1.71746 -1.56475 1.71746</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>7.398 -2.41212 0.052986 -1.71746 -1.56475 1.71746</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00009'>
+        <pose frame=''>7.41488 -4.19616 0.057065 0 -1.56506 0</pose>
+        <scale>0.012247 0.019606 1</scale>
+        <link name='main'>
+          <pose frame=''>7.41488 -4.19616 0.057065 0 -1.56506 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00009_1'>
+        <pose frame=''>7.36953 -6.53352 0.057065 0 -1.56506 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>7.36953 -6.53352 0.057065 0 -1.56506 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00009_2'>
+        <pose frame=''>-4.09583 0.75289 0.319052 0 -1.56506 0</pose>
+        <scale>23.1989 15.6683 1</scale>
+        <link name='main'>
+          <pose frame=''>-4.09583 0.75289 0.319052 0 -1.56506 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00009_3'>
+        <pose frame=''>-0.611469 0.796115 0.319052 0 -1.56506 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-0.611469 0.796115 0.319052 0 -1.56506 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00009_4'>
+        <pose frame=''>7.39093 -5.43348 0.057065 0 -1.56506 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>7.39093 -5.43348 0.057065 0 -1.56506 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00010'>
+        <pose frame=''>4.88976 -6.91091 0.075723 -1.55597 0 0</pose>
+        <scale>0.009732 0.011786 1</scale>
+        <link name='main'>
+          <pose frame=''>4.88976 -6.91091 0.075723 -1.55597 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00010_4'>
+        <pose frame=''>6.16552 -6.89545 0.075723 -1.55597 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>6.16552 -6.89545 0.075723 -1.55597 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00011'>
+        <pose frame=''>4.49728 -6.88805 0.081152 -1.57202 0 0</pose>
+        <scale>0.020578 0.011151 1</scale>
+        <link name='main'>
+          <pose frame=''>4.49728 -6.88805 0.081152 -1.57202 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00011_1'>
+        <pose frame=''>2.06164 -6.87893 0.081152 -1.57202 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>2.06164 -6.87893 0.081152 -1.57202 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00011_4'>
+        <pose frame=''>3.20309 -6.88197 0.081152 -1.57202 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>3.20309 -6.88197 0.081152 -1.57202 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00012'>
+        <pose frame=''>1.69535 -6.89355 0.057381 -1.56521 0 0</pose>
+        <scale>0.021279 0.014105 1</scale>
+        <link name='main'>
+          <pose frame=''>1.69535 -6.89355 0.057381 -1.56521 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00012_1'>
+        <pose frame=''>-0.590468 -6.89593 0.057381 -1.56521 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-0.590468 -6.89593 0.057381 -1.56521 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00012_2'>
+        <pose frame=''>-6.24587 -2.23674 0.414036 -1.56521 0 0</pose>
+        <scale>7.75691 15.1663 1</scale>
+        <link name='main'>
+          <pose frame=''>-6.24587 -2.23674 0.414036 -1.56521 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00012_3'>
+        <pose frame=''>-6.27866 -5.73775 0.414036 -1.56521 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-6.27866 -5.73775 0.414036 -1.56521 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00013'>
+        <pose frame=''>0.448174 -6.89623 0.057381 -1.56521 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>0.448174 -6.89623 0.057381 -1.56521 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00013_1'>
+        <pose frame=''>-0.974451 -6.88618 0.062349 -1.57866 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-0.974451 -6.88618 0.062349 -1.57866 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00013_4'>
+        <pose frame=''>-1.91486 -6.89603 0.062349 -1.57866 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-1.91486 -6.89603 0.062349 -1.57866 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00014'>
+        <pose frame=''>-5.02251 -6.72649 0.04832 1.63113 -0 0</pose>
+        <scale>0.012994 0.009799 1</scale>
+        <link name='main'>
+          <pose frame=''>-5.02251 -6.72649 0.04832 1.63113 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00014_1'>
+        <pose frame=''>-7.06725 -6.67898 0.04832 1.63113 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-7.06725 -6.67898 0.04832 1.63113 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00014_2'>
+        <pose frame=''>-2.06591 6.16997 0.307025 1.60382 -0 0</pose>
+        <scale>7.75587 11.3312 1</scale>
+        <link name='main'>
+          <pose frame=''>-2.06591 6.16997 0.307025 1.60382 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00014_3'>
+        <pose frame=''>-2.06589 2.67284 0.307025 1.60382 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-2.06589 2.67284 0.307025 1.60382 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00014_4'>
+        <pose frame=''>-6.14222 -6.70925 0.04832 1.63113 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>-6.14222 -6.70925 0.04832 1.63113 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00015'>
+        <pose frame=''>0.569793 0.506527 0.396207 3.14159 1.5706 3.14159</pose>
+        <scale>0.285495 0.248199 1</scale>
+        <link name='main'>
+          <pose frame=''>0.569793 0.506527 0.396207 3.14159 1.5706 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Apriltag36_11_00015_1'>
+        <pose frame=''>4.05941 0.485004 0.396207 3.14159 1.5706 3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='main'>
+          <pose frame=''>4.05941 0.485004 0.396207 3.14159 1.5706 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -6307,6 +6842,16 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='MagicCube_01_003_clone'>
+        <pose frame=''>6.37944 1.89377 0.02286 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_retail_MagicCube_01::link'>
+          <pose frame=''>6.37944 1.89377 0.02286 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='RetailShopFloor_01_001'>
         <pose frame=''>-0.002687 0 -0.276618 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -6338,7 +6883,7 @@
         </link>
       </model>
       <model name='SecurityCamera_01_002'>
-        <pose frame=''>-2.53759 6.03183 1.03776 0 -0 -1.5201</pose>
+        <pose frame=''>-2.53759 6.03183 1.03776 0 0 -1.5201</pose>
         <scale>1 1 1</scale>
         <link name='aws_robomaker_retail_SecurityCamera_01::link'>
           <pose frame=''>-2.53759 6.03183 1.03776 0 -0 -1.5201</pose>
@@ -6567,14 +7112,34 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='aws_robomaker_retail_ChairD_01'>
-        <pose frame=''>-4.47603 -4.04319 0.013133 0 0.000976 0</pose>
+      <model name='aws_robomaker_residential_FoldingDoor_01'>
+        <pose frame=''>4.65224 2.19362 0 0 0 -1.57471</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-4.47603 -4.04319 0.013133 0 0.000976 0</pose>
+          <pose frame=''>4.65224 2.19362 0 0 0 -1.57471</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>8.1e-05 -0.000794 18.8347 3.09925 -0.322884 -0.006955</acceleration>
-          <wrench>0.000362 -0.003573 84.7563 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='aws_robomaker_residential_ShoeRack'>
+        <pose frame=''>2.2531 3.12101 0.017846 2.2e-05 8e-06 -1.57698</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>2.2531 3.12101 0.017846 2.2e-05 8e-06 -1.57698</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.099065 -0.10594 9.16853 2.33323 -0.503538 -0.000764</acceleration>
+          <wrench>-0.594393 -0.63564 55.0112 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='aws_robomaker_retail_ChairD_01'>
+        <pose frame=''>-4.47603 -4.04319 0.013128 1e-05 0.000964 -8e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-4.47603 -4.04319 0.013128 1e-05 0.000964 -8e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -44.1 0 -0 0</wrench>
         </link>
       </model>
       <model name='aws_robomaker_retail_ChairD_01_0'>
@@ -6583,25 +7148,25 @@
         <link name='link'>
           <pose frame=''>-4.44927 -3.26824 0.013133 0 0.000976 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0 0 -0 0</acceleration>
-          <wrench>0 -0 -0 0 -0 0</wrench>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='aws_robomaker_retail_ChairD_01_0_clone'>
+      <model name='aws_robomaker_retail_ChairD_01_0_4'>
         <pose frame=''>-3.2964 -3.30222 0.013133 0 0.000976 3.12804</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>-3.2964 -3.30222 0.013133 0 0.000976 3.12804</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>-0 0 -0 0 -0 0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='aws_robomaker_retail_ChairD_01_0_clone_clone'>
-        <pose frame=''>-3.27217 -3.99535 0.013128 1.9e-05 0.000974 3.12804</pose>
+      <model name='aws_robomaker_retail_ChairD_01_0_clone_4'>
+        <pose frame=''>-3.27219 -3.99537 0.013128 1.9e-05 0.000974 3.12799</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-3.27217 -3.99535 0.013128 1.9e-05 0.000974 3.12804</pose>
+          <pose frame=''>-3.27219 -3.99537 0.013128 1.9e-05 0.000974 3.12799</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -44.1 0 -0 0</wrench>
@@ -6617,8 +7182,36 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='cabinet'>
+        <pose frame=''>6.43693 2.00859 0 0 -0 1.5712</pose>
+        <scale>1 1 1</scale>
+        <link name='cabinet_bottom_plate'>
+          <pose frame=''>6.43693 2.00859 0 0 -0 1.5712</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <light name='RetailShop_CeilingLight_001'>
         <pose frame=''>2.77442 -3.62815 3.17847 0 -0 0</pose>
+      </light>
+      <light name='RetailShop_CeilingLight_0010'>
+        <pose frame=''>6.70498 -0.552786 3 0 -0 0</pose>
+      </light>
+      <light name='RetailShop_CeilingLight_0011'>
+        <pose frame=''>6.45432 -1.02657 3 0 -0 0</pose>
+      </light>
+      <light name='RetailShop_CeilingLight_0012'>
+        <pose frame=''>0.045261 4.14753 3 0 -0 0</pose>
+      </light>
+      <light name='RetailShop_CeilingLight_0013'>
+        <pose frame=''>-4.98297 4.24184 3 0 -0 0</pose>
+      </light>
+      <light name='RetailShop_CeilingLight_0014'>
+        <pose frame=''>-4.04572 5.57248 3 0 -0 0</pose>
+      </light>
+      <light name='RetailShop_CeilingLight_0015'>
+        <pose frame=''>-5.47305 6.99345 3 0 -0 0</pose>
       </light>
       <light name='RetailShop_CeilingLight_002'>
         <pose frame=''>5.38399 -5.38371 3.17847 0 -0 0</pose>
@@ -6662,7 +7255,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_collision.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_collision.DAE</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6683,7 +7276,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_visual.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_visual.DAE</uri>
             </mesh>
           </geometry>
           <meta>
@@ -6713,7 +7306,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_collision.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_collision.DAE</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6734,7 +7327,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_visual.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_visual.DAE</uri>
             </mesh>
           </geometry>
           <meta>
@@ -6747,7 +7340,7 @@
       </link>
       <pose frame=''>-4.44927 -3.26824 0 0 -0 0</pose>
     </model>
-    <model name='aws_robomaker_retail_ChairD_01_0_clone'>
+    <model name='aws_robomaker_retail_ChairD_01_0_4'>
       <link name='link'>
         <inertial>
           <mass>4.5</mass>
@@ -6764,7 +7357,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_collision.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_collision.DAE</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6785,7 +7378,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_visual.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_visual.DAE</uri>
             </mesh>
           </geometry>
           <meta>
@@ -6798,7 +7391,7 @@
       </link>
       <pose frame=''>-3.29531 -3.2216 0.013133 0 0.000976 0</pose>
     </model>
-    <model name='aws_robomaker_retail_ChairD_01_0_clone_clone'>
+    <model name='aws_robomaker_retail_ChairD_01_0_clone_4'>
       <link name='link'>
         <inertial>
           <mass>4.5</mass>
@@ -6815,7 +7408,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_collision.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_collision.DAE</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6836,7 +7429,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_visual.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_ChairD_01/meshes/aws_ChairD_01_visual.DAE</uri>
             </mesh>
           </geometry>
           <meta>
@@ -6865,7 +7458,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_NightStand_01/meshes/aws_NightStand_01_collision.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_NightStand_01/meshes/aws_NightStand_01_collision.DAE</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -6886,7 +7479,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://aws_robomaker_retail_NightStand_01/meshes/aws_NightStand_01_visual.DAE</uri>
+              <uri>file://models/aws_robomaker_retail_NightStand_01/meshes/aws_NightStand_01_visual.DAE</uri>
             </mesh>
           </geometry>
           <meta>
@@ -6899,6 +7492,1544 @@
       </link>
       <static>1</static>
       <pose frame=''>-3.6659 -2.75516 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00000'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00000/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00000/materials/textures</uri>
+              <name>Apriltag36_11_00000</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>7.26767 0.440228 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00000_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00000/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00000/materials/textures</uri>
+              <name>Apriltag36_11_00000</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>7.38647 -0.81515 0.073883 0 -1.51519 0</pose>
+    </model>
+    <model name='Apriltag36_11_00000_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00000/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00000/materials/textures</uri>
+              <name>Apriltag36_11_00000</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>7.39746 1.5994 0.073883 0 -1.51519 0</pose>
+    </model>
+    <model name='Apriltag36_11_00001'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>2.97506 3.25273 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00001/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00001/materials/textures</uri>
+              <name>Apriltag36_11_00001</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>5.17411 -2.67434 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00001_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.336128 0.307435 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00001/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00001/materials/textures</uri>
+              <name>Apriltag36_11_00001</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>5.17855 -4.70031 0.640755 -1.56066 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00002'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>2.95974 2.83567 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00002/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00002/materials/textures</uri>
+              <name>Apriltag36_11_00002</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>4.36988 -2.67084 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00003'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.337867 0.352651 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00002/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00002/materials/textures</uri>
+              <name>Apriltag36_11_00002</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>5.12777 -0.58732 0.545634 -1.56829 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00003'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.337867 0.352651 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00002/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00002/materials/textures</uri>
+              <name>Apriltag36_11_00002</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>5.12777 -0.58732 0.545634 -1.56829 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00003_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.403121 0.375366 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00003/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00003/materials/textures</uri>
+              <name>Apriltag36_11_00003</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>1.55197 -1.94377 0.274908 0 1.5649 0</pose>
+    </model>
+    <model name='Apriltag36_11_00003_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.403121 0.375366 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00003/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00003/materials/textures</uri>
+              <name>Apriltag36_11_00003</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>1.98483 -2.52054 0.274908 0 1.5649 0</pose>
+    </model>
+    <model name='Apriltag36_11_00003_1_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.403121 0.375366 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00003/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00003/materials/textures</uri>
+              <name>Apriltag36_11_00003</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>1.84379 -1.50287 0.275036 -1.5768 1.5649 -8e-06</pose>
+    </model>
+    <model name='Apriltag36_11_00004'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>2.62823 2.28586 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00004/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00004/materials/textures</uri>
+              <name>Apriltag36_11_00004</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>1.99686 -3.79279 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00004_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.380484 0.437471 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00004/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00004/materials/textures</uri>
+              <name>Apriltag36_11_00004</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>2.06788 -5.1982 0.309387 -1.53785 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00004_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.380484 0.437471 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00004/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00004/materials/textures</uri>
+              <name>Apriltag36_11_00004</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>2.38529 -4.77969 0.309387 -1.53785 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00004_1_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.380484 0.437471 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00004/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00004/materials/textures</uri>
+              <name>Apriltag36_11_00004</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>1.56326 -4.86449 0.312466 0 1.55193 0</pose>
+    </model>
+    <model name='Apriltag36_11_00005'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>2.62249 2.46825 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00005/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00005/materials/textures</uri>
+              <name>Apriltag36_11_00005</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-0.693308 -1.80824 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00005_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.381316 0.405145 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00005/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00005/materials/textures</uri>
+              <name>Apriltag36_11_00005</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-0.542772 -5.80546 0.171669 -1.56449 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00006'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>1.69847 1.8124 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00006/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00006/materials/textures</uri>
+              <name>Apriltag36_11_00006</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-5.52349 -1.02144 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00007'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>1.81322 1.65737 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00007/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00007/materials/textures</uri>
+              <name>Apriltag36_11_00007</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-5.57592 0.78501 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00008'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>8.9606 6.66906 0.173836</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00008/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00008/materials/textures</uri>
+              <name>Apriltag36_11_00008</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>6.80094 -3.4699 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00008_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.1116 0.149945 0.000575</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00008/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00008/materials/textures</uri>
+              <name>Apriltag36_11_00008</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>7.398 -2.41212 0.052986 -1.71746 -1.56475 1.71746</pose>
+    </model>
+    <model name='Apriltag36_11_00008_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.1116 0.149945 0.000575</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00008/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00008/materials/textures</uri>
+              <name>Apriltag36_11_00008</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>7.3994 -1.29434 0.052986 -1.71746 -1.56475 1.71746</pose>
+    </model>
+    <model name='Apriltag36_11_00009'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>11.3494 8.75956 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00009/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00009/materials/textures</uri>
+              <name>Apriltag36_11_00009</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>6.88805 -4.63558 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00009_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.08811 0.114161 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00009/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00009/materials/textures</uri>
+              <name>Apriltag36_11_00009</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>7.39093 -5.43348 0.057065 0 -1.56506 0</pose>
+    </model>
+    <model name='Apriltag36_11_00009_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.08811 0.114161 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00009/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00009/materials/textures</uri>
+              <name>Apriltag36_11_00009</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>7.36953 -6.53352 0.057065 0 -1.56506 0</pose>
+    </model>
+    <model name='Apriltag36_11_00009_2'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.017878 0.029793 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00009/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00009/materials/textures</uri>
+              <name>Apriltag36_11_00009</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-4.09733 0.75289 0.057065 0 -1.56506 0</pose>
+    </model>
+    <model name='Apriltag36_11_00009_3'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.434237 0.43745 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00009/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00009/materials/textures</uri>
+              <name>Apriltag36_11_00009</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-0.611469 0.796115 0.319052 0 -1.56506 0</pose>
+    </model>
+    <model name='Apriltag36_11_00010'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>11.9344 9.46606 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00010/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00010/materials/textures</uri>
+              <name>Apriltag36_11_00010</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>4.88976 -6.32301 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00010_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.08379 0.105641 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00010/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00010/materials/textures</uri>
+              <name>Apriltag36_11_00010</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>6.16552 -6.89545 0.075723 -1.55597 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00011'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>7.10045 9.33827 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00011/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00011/materials/textures</uri>
+              <name>Apriltag36_11_00011</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>4.05082 -6.39171 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00011_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.140836 0.107086 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00011/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00011/materials/textures</uri>
+              <name>Apriltag36_11_00011</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>3.20309 -6.88197 0.081152 -1.57202 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00011_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.140836 0.107086 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00011/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00011/materials/textures</uri>
+              <name>Apriltag36_11_00011</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>2.06164 -6.87893 0.081152 -1.57202 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00012'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>6.35222 8.26267 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00012/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00012/materials/textures</uri>
+              <name>Apriltag36_11_00012</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>1.05877 -6.3844 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00013'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.157426 0.121025 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00012/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00012/materials/textures</uri>
+              <name>Apriltag36_11_00012</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>0.448174 -6.89623 0.057381 -1.56521 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00012_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.157426 0.121025 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00012/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00012/materials/textures</uri>
+              <name>Apriltag36_11_00012</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-0.590468 -6.89593 0.057381 -1.56521 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00012_2'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.057866 0.029762 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00012/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00012/materials/textures</uri>
+              <name>Apriltag36_11_00012</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-6.24587 -2.23475 0.057381 -1.56521 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00012_3'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.42828 0.492133 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00012/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00012/materials/textures</uri>
+              <name>Apriltag36_11_00012</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-6.27866 -5.73775 0.414036 -1.56521 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00013'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.157426 0.121025 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00012/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00012/materials/textures</uri>
+              <name>Apriltag36_11_00012</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>0.448174 -6.89623 0.057381 -1.56521 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00014'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>7.64607 10.2752 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00014/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00014/materials/textures</uri>
+              <name>Apriltag36_11_00014</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-5.40432 -6.18805 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00015'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>2.20767 2.23501 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00015/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00015/materials/textures</uri>
+              <name>Apriltag36_11_00015</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>0.063438 0.506527 0 0 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00013_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.132889 0.163246 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00013/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00013/materials/textures</uri>
+              <name>Apriltag36_11_00013</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-1.91486 -6.89603 0.062349 -1.57866 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00013_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.132889 0.163246 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00013/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00013/materials/textures</uri>
+              <name>Apriltag36_11_00013</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-0.974451 -6.88618 0.062349 -1.57866 0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00014_4'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.130786 0.097322 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00014/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00014/materials/textures</uri>
+              <name>Apriltag36_11_00014</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-6.14222 -6.70925 0.04832 1.63113 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00014_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.130786 0.097322 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00014/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00014/materials/textures</uri>
+              <name>Apriltag36_11_00014</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-7.06725 -6.67898 0.04832 1.63113 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00014_2'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.043216 0.021493 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00014/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00014/materials/textures</uri>
+              <name>Apriltag36_11_00014</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-2.06591 6.16139 0.04832 1.63113 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00014_3'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.395804 0.440677 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00014/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00014/materials/textures</uri>
+              <name>Apriltag36_11_00014</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-2.06589 2.67284 0.307025 1.60382 -0 0</pose>
+    </model>
+    <model name='Apriltag36_11_00015_1'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.452967 0.447425 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00015/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00015/materials/textures</uri>
+              <name>Apriltag36_11_00015</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>4.05941 0.485004 0.396207 3.14159 1.5706 3.14159</pose>
+    </model>
+    <model name='Apriltag36_11_00008_2'>
+      <link name='main'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <visual name='main_Visual'>
+          <geometry>
+            <box>
+              <size>0.036133 0.059664 0.000575</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://models/Apriltag36_11_00008/materials/scripts</uri>
+              <uri>file://models/Apriltag36_11_00008/materials/textures</uri>
+              <name>Apriltag36_11_00008</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>-5.57639 3.41811 0.052986 -1.71746 -1.56475 1.71746</pose>
+    </model>
+    <model name='aws_robomaker_residential_ShoeRack'>
+      <link name='link'>
+        <inertial>
+          <mass>6</mass>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.04</iyy>
+            <iyz>0</iyz>
+            <ixx>0.02</ixx>
+            <izz>1</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file://models/aws_robomaker_residential_ShoeRack_01/meshes/aws_ShoeRack_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.2</mu>
+                <mu2>0.2</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode>
+                <kd>2500</kd>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file://models/aws_robomaker_residential_ShoeRack_01/meshes/aws_ShoeRack_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.89205 3.65155 0 0 -0 0</pose>
+    </model>
+    <plugin name='BoxerLight' filename='libRobotLightPlugin.so'/>
+    <plugin name='StoreLight' filename='libBookStoreLightPlugin.so'/>
+    <wind/>
+    <model name='cabinet'>
+      <static>1</static>
+      <link name='cabinet_bottom_plate'>
+        <inertial>
+          <pose frame=''>0 0 -1 0 -0 0</pose>
+          <inertia>
+            <ixx>2.05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>2.05</iyy>
+            <iyz>0</iyz>
+            <izz>2.05</izz>
+          </inertia>
+          <mass>25</mass>
+        </inertial>
+        <collision name='cabinet_bottom_plate_geom'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.45 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='cabinet_bottom_plate_geom_visual'>
+          <pose frame=''>0 0 0.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.45 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cabinet_bottom_plate_geom_cabinet_back_plate'>
+          <pose frame=''>0.235 0 0.51 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.45 1.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='cabinet_bottom_plate_geom_cabinet_back_plate_visual'>
+          <pose frame=''>0.235 0 0.51 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.45 1.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cabinet_bottom_plate_geom_cabinet_left_plate'>
+          <pose frame=''>0 0.235 0.51 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.02 1.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='cabinet_bottom_plate_geom_cabinet_left_plate_visual'>
+          <pose frame=''>0 0.235 0.51 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.02 1.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cabinet_bottom_plate_geom_cabinet_middle_plate'>
+          <pose frame=''>0 0 0.51 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.45 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='cabinet_bottom_plate_geom_cabinet_middle_plate_visual'>
+          <pose frame=''>0 0 0.51 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.45 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cabinet_bottom_plate_geom_cabinet_right_plate'>
+          <pose frame=''>0 -0.235 0.51 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.02 1.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='cabinet_bottom_plate_geom_cabinet_right_plate_visual'>
+          <pose frame=''>0 -0.235 0.51 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.02 1.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='cabinet_bottom_plate_geom_cabinet_top_plate'>
+          <pose frame=''>0 0 1.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.45 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='cabinet_bottom_plate_geom_cabinet_top_plate_visual'>
+          <pose frame=''>0 0 1.01 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 0.45 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>6.43693 2.00859 0 0 -0 0</pose>
+    </model>
+    <model name='aws_robomaker_residential_FoldingDoor_01'>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file://models/aws_robomaker_residential_FoldingDoor_01/meshes/aws_FoldingDoor_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file://models/aws_robomaker_residential_FoldingDoor_01/meshes/aws_FoldingDoor_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>2</layer>
+          </meta>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>5.20759 0.959715 0 0 -0 0</pose>
+    </model>
+    <model name='MagicCube_01_003_clone'>
+      <link name='aws_robomaker_retail_MagicCube_01::link'>
+        <inertial>
+          <mass>0.2</mass>
+          <inertia>
+            <ixx>0.01</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01</iyy>
+            <iyz>0</iyz>
+            <izz>0.01</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file://models/aws_robomaker_retail_MagicCube_01/meshes/aws_MagicCube_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file://models/aws_robomaker_retail_MagicCube_01/meshes/aws_MagicCube_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose frame=''>6.37944 1.89377 1.03565 0 -0 0</pose>
     </model>
   </world>
 </sdf>
